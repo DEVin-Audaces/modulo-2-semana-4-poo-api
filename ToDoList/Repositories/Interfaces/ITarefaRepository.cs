@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using ToDoList.Models;
+using projeto.ToDoList.Models;
 
 namespace ToDoList.Repositories.Interfaces
 {

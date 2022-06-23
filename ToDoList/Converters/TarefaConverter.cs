@@ -1,8 +1,9 @@
-﻿using ToDoList.Dtos;
-using ToDoList.Models;
+﻿using projeto.ToDoList.Dtos;
+using projeto.ToDoList.Models;
+using projeto.ToDoList.Repositories;
 using ToDoList.Repositories;
 
-namespace ToDoList.Converters
+namespace projeto.ToDoList.Converters
 {
     public static class TarefaConverter
     {

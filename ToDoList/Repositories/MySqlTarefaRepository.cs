@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using ToDoList.Models;
+using projeto.ToDoList.Models;
 using ToDoList.Repositories.Interfaces;
 
-namespace ToDoList.Repositories
+namespace projeto.ToDoList.Repositories
 {
     public class MySqlTarefaRepository : ITarefaRepository
     {

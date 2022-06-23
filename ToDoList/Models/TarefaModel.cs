@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ToDoList.Models
+namespace projeto.ToDoList.Models
 {
     public class TarefaModel
     {

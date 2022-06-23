@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using ToDoList.Models;
-using ToDoList.Repositories.Interfaces;
+using projeto.ToDoList.Models;
 
-namespace ToDoList.Repositories
+namespace projeto.ToDoList.Repositories
 {
     public static class TarefaRepository
     {

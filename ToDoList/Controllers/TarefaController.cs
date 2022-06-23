@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Converters;
-using ToDoList.Dtos;
-using ToDoList.Models;
+using projeto.ToDoList.Converters;
+using projeto.ToDoList.Dtos;
+using projeto.ToDoList.Models;
+using projeto.ToDoList.Repositories;
 using ToDoList.Repositories;
 using ToDoList.Repositories.Interfaces;
 

@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.projeto.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\Vitor Lima\Projetos\DevInHouse\Semana4\modulo-2-semana-4-poo-api\.idea\.idea.projeto.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
