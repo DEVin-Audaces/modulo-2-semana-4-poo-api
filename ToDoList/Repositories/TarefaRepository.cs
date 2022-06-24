@@ -4,7 +4,7 @@ using projeto.ToDoList.Models;
 
 namespace projeto.ToDoList.Repositories
 {
-    public static class TarefaRepository
+    public class TarefaRepository
     {
         private static int Id = 0;
         private static List<TarefaModel> lista = new List<TarefaModel>();

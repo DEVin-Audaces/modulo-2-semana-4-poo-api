@@ -4,8 +4,7 @@ using projeto.ToDoList.Converters;
 using projeto.ToDoList.Dtos;
 using projeto.ToDoList.Models;
 using projeto.ToDoList.Repositories;
-using ToDoList.Repositories;
-using ToDoList.Repositories.Interfaces;
+using projeto.ToDoList.Repositories.Interfaces;
 
 namespace ToDoList.Controllers
 {
@@ -24,6 +23,8 @@ namespace ToDoList.Controllers
         [Route("listar")]
         public IActionResult Listar([FromQuery] string pesquisa)
         {
+            TarefaModel tarefa = _tarefaRepository.ObterPorId(10);
+
             return Ok(_tarefaRepository.Listar(pesquisa));
         }
 

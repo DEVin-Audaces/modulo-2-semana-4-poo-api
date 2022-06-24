@@ -1,7 +1,6 @@
 ﻿using projeto.ToDoList.Dtos;
 using projeto.ToDoList.Models;
 using projeto.ToDoList.Repositories;
-using ToDoList.Repositories;
 
 namespace projeto.ToDoList.Converters
 {

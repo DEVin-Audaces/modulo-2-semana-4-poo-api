@@ -1,12 +1,10 @@
 ﻿using System.Collections.Generic;
 using projeto.ToDoList.Models;
 
-namespace ToDoList.Repositories.Interfaces
+namespace projeto.ToDoList.Repositories.Interfaces
 {
-    public interface ITarefaRepository
+    public interface ITarefaRepository : IRepository<TarefaModel>
     {
-        void Adicionar(TarefaModel tarefaModel);
-        void Remover(int id);
-        List<TarefaModel> Listar(string pesquisa = null);
+
     }
 }

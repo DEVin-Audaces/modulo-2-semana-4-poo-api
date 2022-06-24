@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using projeto.ToDoList.Repositories;
+using projeto.ToDoList.Repositories.Interfaces;
 
 namespace projeto
 {
@@ -25,6 +27,11 @@ namespace projeto
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "projeto", Version = "v1" });
             });
+
+            services.AddCors();
+            services.AddScoped<IModeloRepository, ModeloRepository>();
+            services.AddScoped<IColecaoRepository, ColecaoRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,7 +49,7 @@ namespace projeto
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
