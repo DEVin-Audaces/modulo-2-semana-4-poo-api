@@ -9,7 +9,6 @@ namespace projeto.ToDoList.Controllers
     public class ModelosController : ControllerBase
     {
         private readonly IModeloRepository _modeloRepository;
-
         public ModelosController(IModeloRepository modeloRepository)
         {
             _modeloRepository = modeloRepository;

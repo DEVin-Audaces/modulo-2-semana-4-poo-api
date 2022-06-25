@@ -30,7 +30,8 @@ namespace projeto
 
             services.AddCors();
             services.AddScoped<IModeloRepository, ModeloRepository>();
-            services.AddScoped<IColecaoRepository, ColecaoRepository>();
+            services.AddScoped<IModeloRepository, ModeloRepository>();
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
         }
 
@@ -50,6 +51,7 @@ namespace projeto
 
             app.UseAuthorization();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

@@ -6,10 +6,10 @@ using projeto.ToDoList.Models;
 using projeto.ToDoList.Repositories;
 using projeto.ToDoList.Repositories.Interfaces;
 
-namespace ToDoList.Controllers
+namespace projeto.ToDoList.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("/api/[controller]")]
     public class TarefaController : ControllerBase
     {
         private readonly ITarefaRepository _tarefaRepository;

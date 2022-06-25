@@ -2,11 +2,8 @@
 
 namespace projeto.ToDoList.Models
 {
-    public class ColecaoModel
+    public class ColecaoModel : BaseModel
     {
-        [Key]
-        [Required]
-        public int Id { get; set; }
         public string Nome { get; set; }
         public string Responsavel { get; set; }
         public string Estacao { get; set; }
